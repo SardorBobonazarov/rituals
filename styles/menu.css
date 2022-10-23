@@ -1,0 +1,28 @@
+.res-menu{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    height: calc(100vh - 100%);
+    background-color: #000;
+    width: 100%;
+    z-index: 10000000000;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .8s ease;
+}
+.res-menu a{
+    display: flex;
+    justify-content: space-between;
+}
+.bigs a{
+    font-size: 2.3rem;
+    text-transform: capitalize;
+}
+.bigs, .smalls{
+    margin-bottom: 2rem;
+}
+.res-menu.menu-activated{
+    left: 0;
+}
